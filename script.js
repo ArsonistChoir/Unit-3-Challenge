@@ -14,7 +14,25 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
-  return "password";
+ var userInput = getCriteria()
+}
+
+function getCriteria(){
+  var passwordLength = prompt("How long do you want password to be?");
+  if (passwordLength <= 7 || passwordLength >= 129){
+  alert("Password must be 8 to 128 letters long. Please try again.")
+return null};
+  
+var hasLowercase = confirm("Do you want lowercase?");
+var hasUppercase = confirm("Do you want uppercase?");
+var hasNumber = confirm("Do you want numbers?");
+var hasSpecial = confirm("Do you want special characters?");
+
+if (hasLowercase === false && hasUppercase === false && hasNumber === false && hasSpecial === false){
+  alert("Please pick one element.")
+  return null
+}
+
 }
 
 
