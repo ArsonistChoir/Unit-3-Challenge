@@ -14,7 +14,6 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
-
  var userInput = getCriteria()
 }
 
@@ -34,6 +33,7 @@ if (hasLowercase === false && hasUppercase === false && hasNumber === false && h
   return null
 }
 
+
 var userchoice = {
  passwordLength: passwordLength, 
  hasLowercase: hasLowercase,
@@ -42,15 +42,18 @@ var userchoice = {
  hasSpecial: hasSpecial,
 }
 
+
 console.log(userchoice)
 return userchoice
 
 }  
 
+var password = ""
 var uppercase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 var lowercase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 var number = [1,2,3,4,5,6,7,8,9,0]
 var special = ["!","@","#","$","%","^","&","*","(",")",]
+
 
 // create a function to take in all the password criteria
   //prompt user for length of password and save it as a variable
